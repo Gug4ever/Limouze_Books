@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About | Limouze Books</title>
+  <meta name="description" content="About Limouze Books — an independent publishing house dedicated to thoughtful, beautifully crafted books.">
+  <link rel="icon" href="assets/logo.jpeg" type="image/jpeg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <nav class="navbar">
+    <div class="container">
+      <a href="index.html" class="nav-logo">
+        <img src="assets/logo.jpeg" alt="Limouze Books">
+        <span>Limouze Books</span>
+      </a>
+      <button class="nav-toggle" aria-label="Toggle menu">&#9776;</button>
+      <div class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="index.html#authors">Authors</a>
+        <a href="about.html" class="active">About</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <section class="hero" style="padding: 160px 0 70px;">
+    <div class="container">
+      <span class="section-eyebrow">About</span>
+      <h1 style="font-size: clamp(2rem, 4.5vw, 3rem);">A house built on patience<br><em>and good books.</em></h1>
+      <div class="divider-gold"></div>
+    </div>
+  </section>
+
+  <!-- ABOUT BODY -->
+  <section class="about-section" style="padding-top: 0;">
+    <div class="container">
+      <p>Limouze Books is an independent publishing house. We exist because we believe the world is better off with more carefully made books in it &mdash; books written by authors who have something to say, and edited with the time and attention they deserve.</p>
+
+      <p class="quote">We don&rsquo;t publish quickly. We publish well.</p>
+
+      <p>Our list is intentionally small. Every title we put into the world is one we have read closely, believed in fully, and shaped together with its author. We are not interested in trends or quotas. We are interested in stories that last &mdash; and in the readers, young and old, who will find themselves in them.</p>
+
+      <p>The house is young. Our first author is <a href="https://daisy-harper-gray-lane.vercel.app" target="_blank" rel="noopener" style="color: var(--gold-deep); border-bottom: 1px solid var(--gold); font-weight: 500;">Daisy Harper Gray-Lane</a>, whose <em>Dream Big, She Did</em> series brings to life the women who shaped our world &mdash; told the way they always should have been. More authors will join in the seasons to come.</p>
+
+      <p>If you are a reader, welcome. If you are an author whose work might find a home with us, we would be glad to hear from you.</p>
+    </div>
+  </section>
+
+  <!-- VALUES -->
+  <section class="authors-section" style="padding: 80px 0;">
+    <div class="container">
+      <span class="section-eyebrow">What we believe</span>
+      <h2 class="section-title">Three things we hold to</h2>
+
+      <div class="authors-grid" style="max-width: 1000px;">
+
+        <div class="author-card" style="cursor: default;">
+          <div class="author-body" style="padding: 48px 32px;">
+            <span class="role">One</span>
+            <h3 style="margin-bottom: 16px;">Slow is a feature</h3>
+            <p>A book takes the time it takes. We do not rush authors, manuscripts, or readers.</p>
+          </div>
+        </div>
+
+        <div class="author-card" style="cursor: default;">
+          <div class="author-body" style="padding: 48px 32px;">
+            <span class="role">Two</span>
+            <h3 style="margin-bottom: 16px;">Authors first</h3>
+            <p>The voice on the page is the author&rsquo;s. Our job is to protect it, sharpen it, and put it in front of the right readers.</p>
+          </div>
+        </div>
+
+        <div class="author-card" style="cursor: default;">
+          <div class="author-body" style="padding: 48px 32px;">
+            <span class="role">Three</span>
+            <h3 style="margin-bottom: 16px;">Made with care</h3>
+            <p>From the first edit to the last detail of the printed page, every book is held to the same simple test: would we be proud to give it as a gift?</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-logo">
+        <img src="assets/logo.jpeg" alt="Limouze Books">
+        <span>Limouze Books</span>
+      </div>
+      <div class="footer-divider"></div>
+      <p>&copy; 2026 Limouze Books. All rights reserved.</p>
+      <p class="tgs-credit">A <a href="https://tonton-gug-studio.vercel.app" target="_blank" rel="noopener">Tonton Gug Studio</a> imprint.</p>
+    </div>
+  </footer>
+
+  <script>
+    document.querySelector('.nav-toggle').addEventListener('click', () => {
+      document.querySelector('.nav-links').classList.toggle('open');
+    });
+    document.querySelectorAll('.nav-links a').forEach(a => {
+      a.addEventListener('click', () => {
+        document.querySelector('.nav-links').classList.remove('open');
+      });
+    });
+  </script>
+</body>
+</html>
