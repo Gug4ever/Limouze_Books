@@ -6,7 +6,7 @@ Stack: static HTML / CSS / vanilla JS. Deployed on Vercel.
 
 ## Authors
 
-- **Daisy Harper Gray-Lane** — *Dream Big, She Did* series ([site](https://daisy-harper-gray-lane.vercel.app))
+- **Daisy Harper Gray-Lane** — *Brilliant Women, Remarkable Stories* series ([site](https://daisy-harper-gray-lane.vercel.app))
 
 ## Structure
 
